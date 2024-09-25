@@ -20,7 +20,7 @@ public class PortfolioWithSeveralAssetsTest {
 
         portfolio.computePortfolioValue();
 
-        assertEquals(portfolio.messages.get(0), "Portfolio is priceless because it got a unicorn!!!!!");
+        assertEquals("Portfolio is priceless because it got a unicorn!!!!!", portfolio.messages.get(0));
     }
 
     @Test
@@ -34,6 +34,6 @@ public class PortfolioWithSeveralAssetsTest {
 
         portfolio.computePortfolioValue();
 
-        assertEquals(portfolio.messages.get(0), "200");
+        assertEquals("200", portfolio.messages.get(0));
     }
 }

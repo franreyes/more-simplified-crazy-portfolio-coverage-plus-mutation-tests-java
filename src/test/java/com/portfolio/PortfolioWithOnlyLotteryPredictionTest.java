@@ -19,7 +19,7 @@ public class PortfolioWithOnlyLotteryPredictionTest {
 
         portfolio.computePortfolioValue();
 
-        assertEquals(portfolio.messages.get(0), "0");
+        assertEquals("0", portfolio.messages.get(0));
     }
 
     @ParameterizedTest
@@ -36,7 +36,7 @@ public class PortfolioWithOnlyLotteryPredictionTest {
 
         portfolio.computePortfolioValue();
 
-        assertEquals(portfolio.messages.get(0), "51");
+        assertEquals("51", portfolio.messages.get(0));
     }
 
 
@@ -54,7 +54,7 @@ public class PortfolioWithOnlyLotteryPredictionTest {
 
         portfolio.computePortfolioValue();
 
-        assertEquals(portfolio.messages.get(0), "52");
+        assertEquals("52", portfolio.messages.get(0));
     }
 
 
@@ -71,7 +71,7 @@ public class PortfolioWithOnlyLotteryPredictionTest {
 
         portfolio.computePortfolioValue();
 
-        assertEquals(portfolio.messages.get(0), "53");
+        assertEquals("53", portfolio.messages.get(0));
     }
 
     // For more than 11 days after now
@@ -89,7 +89,7 @@ public class PortfolioWithOnlyLotteryPredictionTest {
 
         portfolio.computePortfolioValue();
 
-        assertEquals(portfolio.messages.get(0), String.valueOf(assetValue));
+        assertEquals(String.valueOf(assetValue), portfolio.messages.get(0));
     }
 
     @ParameterizedTest
@@ -106,7 +106,7 @@ public class PortfolioWithOnlyLotteryPredictionTest {
 
         portfolio.computePortfolioValue();
 
-        assertEquals(portfolio.messages.get(0), String.valueOf(assetValue + 1));
+        assertEquals(String.valueOf(assetValue + 1), portfolio.messages.get(0));
     }
 
     //----------------------
@@ -126,7 +126,7 @@ public class PortfolioWithOnlyLotteryPredictionTest {
 
         portfolio.computePortfolioValue();
 
-        assertEquals(portfolio.messages.get(0), String.valueOf(assetValue + 2));
+        assertEquals(String.valueOf(assetValue + 2), portfolio.messages.get(0));
     }
 
     @ParameterizedTest
@@ -143,7 +143,7 @@ public class PortfolioWithOnlyLotteryPredictionTest {
 
         portfolio.computePortfolioValue();
 
-        assertEquals(portfolio.messages.get(0), String.valueOf(assetValue + 1));
+        assertEquals(String.valueOf(assetValue + 1), portfolio.messages.get(0));
     }
 
     @ParameterizedTest
@@ -160,7 +160,7 @@ public class PortfolioWithOnlyLotteryPredictionTest {
 
         portfolio.computePortfolioValue();
 
-        assertEquals(portfolio.messages.get(0), String.valueOf(assetValue));
+        assertEquals(String.valueOf(assetValue), portfolio.messages.get(0));
     }
     //----------------------
 
@@ -179,7 +179,7 @@ public class PortfolioWithOnlyLotteryPredictionTest {
 
         portfolio.computePortfolioValue();
 
-        assertEquals(portfolio.messages.get(0), String.valueOf(assetValue + 3));
+        assertEquals(String.valueOf(assetValue + 3), portfolio.messages.get(0));
     }
 
     @ParameterizedTest
@@ -196,7 +196,7 @@ public class PortfolioWithOnlyLotteryPredictionTest {
 
         portfolio.computePortfolioValue();
 
-        assertEquals(portfolio.messages.get(0), String.valueOf(assetValue + 2));
+        assertEquals(String.valueOf(assetValue + 2), portfolio.messages.get(0));
     }
 
     @ParameterizedTest
@@ -213,7 +213,7 @@ public class PortfolioWithOnlyLotteryPredictionTest {
 
         portfolio.computePortfolioValue();
 
-        assertEquals(portfolio.messages.get(0), String.valueOf(assetValue + 1));
+        assertEquals(String.valueOf(assetValue + 1), portfolio.messages.get(0));
     }
 
     @ParameterizedTest
@@ -230,7 +230,7 @@ public class PortfolioWithOnlyLotteryPredictionTest {
 
         portfolio.computePortfolioValue();
 
-        assertEquals(portfolio.messages.get(0), String.valueOf(assetValue));
+        assertEquals(String.valueOf(assetValue), portfolio.messages.get(0));
     }
 }
 

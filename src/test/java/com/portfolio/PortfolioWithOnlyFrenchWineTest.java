@@ -22,7 +22,7 @@ public class PortfolioWithOnlyFrenchWineTest {
 
         portfolio.computePortfolioValue();
 
-        assertEquals(portfolio.messages.get(0), String.valueOf(assetValue + 2));
+        assertEquals(String.valueOf(assetValue + 2), portfolio.messages.get(0));
     }
 
     @ParameterizedTest
@@ -39,7 +39,7 @@ public class PortfolioWithOnlyFrenchWineTest {
 
         portfolio.computePortfolioValue();
 
-        assertEquals(portfolio.messages.get(0), String.valueOf(assetValue));
+        assertEquals(String.valueOf(assetValue), portfolio.messages.get(0));
     }
 
     @ParameterizedTest
@@ -56,7 +56,7 @@ public class PortfolioWithOnlyFrenchWineTest {
 
         portfolio.computePortfolioValue();
 
-        assertEquals(portfolio.messages.get(0), String.valueOf(assetValue + 1));
+        assertEquals(String.valueOf(assetValue + 1), portfolio.messages.get(0));
     }
 
     @ParameterizedTest
@@ -73,6 +73,6 @@ public class PortfolioWithOnlyFrenchWineTest {
 
         portfolio.computePortfolioValue();
 
-        assertEquals(portfolio.messages.get(0), String.valueOf(assetValue));
+        assertEquals(String.valueOf(assetValue), portfolio.messages.get(0));
     }
 }

@@ -18,7 +18,7 @@ public class PortfolioWithOnlyUnicornTest {
 
         portfolio.computePortfolioValue();
 
-        assertEquals(portfolio.messages.get(0), "Portfolio is priceless because it got a unicorn!!!!!");
+        assertEquals("Portfolio is priceless because it got a unicorn!!!!!", portfolio.messages.get(0));
     }
 
     @Test
@@ -31,6 +31,6 @@ public class PortfolioWithOnlyUnicornTest {
 
         portfolio.computePortfolioValue();
 
-        assertEquals(portfolio.messages.get(0), "Portfolio is priceless because it got a unicorn!!!!!");
+        assertEquals("Portfolio is priceless because it got a unicorn!!!!!", portfolio.messages.get(0));
     }
 }

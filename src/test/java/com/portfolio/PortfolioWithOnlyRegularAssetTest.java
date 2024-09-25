@@ -24,7 +24,7 @@ public class PortfolioWithOnlyRegularAssetTest {
 
         portfolio.computePortfolioValue();
 
-        assertEquals(portfolio.messages.get(0), String.valueOf(assetValue - 2));
+        assertEquals(String.valueOf(assetValue - 2), portfolio.messages.get(0));
     }
     
     @ParameterizedTest
@@ -41,7 +41,7 @@ public class PortfolioWithOnlyRegularAssetTest {
 
         portfolio.computePortfolioValue();
 
-        assertEquals(portfolio.messages.get(0),  String.valueOf(assetValue));
+        assertEquals(String.valueOf(assetValue), portfolio.messages.get(0));
     }
     
     @Test // 1 day before now: off point for asset date in days boundary between (-inf, 0) y [0, +inf] 
@@ -54,7 +54,7 @@ public class PortfolioWithOnlyRegularAssetTest {
 
         portfolio.computePortfolioValue();
 
-        assertEquals(portfolio.messages.get(0), "4");
+        assertEquals("4", portfolio.messages.get(0));
     }
     
     @Test // 0 days: on point for asset date in days boundary between (-inf, 0) y [0, +inf] 
@@ -68,7 +68,7 @@ public class PortfolioWithOnlyRegularAssetTest {
 
         portfolio.computePortfolioValue();
 
-        assertEquals(portfolio.messages.get(0), "5");
+        assertEquals("5", portfolio.messages.get(0));
     }
     
     @ParameterizedTest
@@ -85,7 +85,7 @@ public class PortfolioWithOnlyRegularAssetTest {
 
         portfolio.computePortfolioValue();
 
-        assertEquals(portfolio.messages.get(0),  String.valueOf(assetValue));
+        assertEquals(String.valueOf(assetValue), portfolio.messages.get(0));
     }
 
     @ParameterizedTest
@@ -102,6 +102,6 @@ public class PortfolioWithOnlyRegularAssetTest {
 
         portfolio.computePortfolioValue();
 
-        assertEquals(portfolio.messages.get(0),  String.valueOf(assetValue - 1));
+        assertEquals(String.valueOf(assetValue - 1), portfolio.messages.get(0));
     }
 }
